@@ -41,8 +41,8 @@ const data = {
       url: "#",
       items: [
         {
-          title: "Dashboard",
-          url: "#",
+          title: "Patient Management",
+          url: "/patients",
           icon: RiScanLine,
         },
         {
