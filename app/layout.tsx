@@ -1,4 +1,5 @@
 import { Inter } from "next/font/google";
+import { AuthProvider } from "@/lib/auth-context";
 
 import "./globals.css";
 
@@ -15,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark scheme-only-dark">
       <body className={`${fontSans.variable} font-sans antialiased`}>
-        {children}
+<AuthProvider> {children}</AuthProvider>     
       </body>
     </html>
   );
